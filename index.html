@@ -2,10 +2,11 @@
 <html lang="ar" dir="rtl">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>NUVORA | Digital Store</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>NUVORA Store</title>
 
 <style>
 
@@ -13,104 +14,144 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
+font-family:Arial;
 }
 
 body{
-font-family:Arial,sans-serif;
-background:#07070d;
-color:white;
+background:#f4f5f7;
 }
 
-.header img{
+.top{
+
+background:#fff;
+padding:18px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 2px 10px rgba(0,0,0,.08);
+
+}
+
+.logo{
+
+font-size:28px;
+font-weight:bold;
+
+}
+
+.menu{
+
+font-size:28px;
+
+}
+
+.banner img{
+
 width:100%;
 display:block;
+
 }
 
-.section-title{
-text-align:center;
-font-size:32px;
-margin:35px 0;
-color:#d4a55d;
+.search{
+
+padding:20px;
+
+}
+
+.search input{
+
+width:100%;
+padding:16px;
+border:none;
+border-radius:14px;
+background:#ececec;
+font-size:18px;
+
 }
 
 .products{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:25px;
+
 padding:20px;
+display:grid;
+grid-template-columns:1fr;
+gap:20px;
+
 }
 
 .card{
-background:#12121d;
-width:320px;
-border-radius:18px;
+
+background:white;
+border-radius:20px;
 overflow:hidden;
-box-shadow:0 0 20px rgba(0,0,0,.4);
+box-shadow:0 2px 12px rgba(0,0,0,.08);
+
 }
 
 .card img{
+
 width:100%;
-height:190px;
+height:210px;
 object-fit:cover;
+
 }
 
-.card-content{
-padding:20px;
-text-align:center;
+.info{
+
+padding:18px;
+
 }
 
-.card h3{
-margin-bottom:12px;
+.title{
+
+font-size:22px;
+font-weight:bold;
+
 }
 
 .price{
-font-size:24px;
+
+margin-top:10px;
+font-size:26px;
 font-weight:bold;
-margin-bottom:15px;
-color:#d4a55d;
+
 }
 
 .btn{
-display:inline-block;
-padding:12px 25px;
-background:#9c6a2f;
+
+display:block;
+margin-top:18px;
+padding:15px;
+text-align:center;
+background:#111827;
 color:white;
 text-decoration:none;
-border-radius:10px;
+border-radius:12px;
+
 }
 
 .features{
+
+padding:20px;
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+grid-template-columns:1fr 1fr;
 gap:15px;
-padding:30px;
-max-width:1200px;
-margin:auto;
+
 }
 
-.feature{
-background:#11111a;
-padding:20px;
-border-radius:15px;
+.box{
+
+background:white;
+padding:25px;
+border-radius:18px;
 text-align:center;
+
 }
 
 footer{
-padding:30px;
+
+padding:40px;
 text-align:center;
-color:#b7b7b7;
-}
-
-@media(max-width:700px){
-
-.card{
-width:92%;
-}
-
-.section-title{
-font-size:24px;
-}
+color:#666;
 
 }
 
@@ -120,27 +161,43 @@ font-size:24px;
 
 <body>
 
-<div class="header">
+<div class="top">
+
+<div class="menu">☰</div>
+
+<div class="logo">
+NUVORA
+</div>
+
+</div>
+
+<div class="banner">
 
 <img src="A10414EC-3465-47C7-8E92-8B0955E709E2.png">
 
 </div>
 
-<h2 class="section-title">
-منتجاتنا الرقمية
-</h2>
+<div class="search">
+
+<input placeholder="ابحث عن منتج">
+
+</div>
 
 <div class="products">
 
 <div class="card">
 
-<img src="https://images.unsplash.com/photo-1611162616475-46b635cb6868?q=80&w=1200&auto=format&fit=crop">
+<img src="https://images.unsplash.com/photo-1611162616475-46b635cb6868?q=80&w=1200">
 
-<div class="card-content">
+<div class="info">
 
-<h3>YouTube Premium</h3>
+<div class="title">
+YouTube Premium
+</div>
 
-<p class="price">4.99 ريال</p>
+<div class="price">
+4.99 ر.س
+</div>
 
 <a class="btn"
 href="https://wa.me/966503492992?text=أبغى اشتري YouTube Premium">
@@ -153,35 +210,20 @@ href="https://wa.me/966503492992?text=أبغى اشتري YouTube Premium">
 
 <div class="card">
 
-<img src="https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?q=80&w=1200&auto=format&fit=crop">
+<img src="https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?q=80&w=1200">
 
-<div class="card-content">
+<div class="info">
 
-<h3>Netflix Account</h3>
+<div class="title">
+Netflix
+</div>
 
-<p class="price">4.99 ريال</p>
+<div class="price">
+4.99 ر.س
+</div>
 
 <a class="btn"
 href="https://wa.me/966503492992?text=أبغى اشتري Netflix">
-شراء الآن
-</a>
-
-</div>
-
-</div>
-
-<div class="card">
-
-<img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200&auto=format&fit=crop">
-
-<div class="card-content">
-
-<h3>VPN Service</h3>
-
-<p class="price">4.99 ريال</p>
-
-<a class="btn"
-href="https://wa.me/966503492992?text=أبغى اشتري VPN">
 شراء الآن
 </a>
 
@@ -193,31 +235,31 @@ href="https://wa.me/966503492992?text=أبغى اشتري VPN">
 
 <div class="features">
 
-<div class="feature">
+<div class="box">
 🔒<br><br>
 تسوق آمن
 </div>
 
-<div class="feature">
+<div class="box">
 ⚡<br><br>
 تسليم سريع
 </div>
 
-<div class="feature">
+<div class="box">
 ⭐<br><br>
 جودة مضمونة
 </div>
 
-<div class="feature">
+<div class="box">
 💬<br><br>
-خدمة عملاء
+دعم العملاء
 </div>
 
 </div>
 
 <footer>
 
-© 2026 NUVORA - جميع الحقوق محفوظة
+© 2026 NUVORA
 
 </footer>
 
